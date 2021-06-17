@@ -1,12 +1,14 @@
 package longestCommonPrefix;
 
 import junit.framework.TestCase;
+import org.junit.Test;
 
 import static avoidObtacles.avoidObstaclesAlgorithm.avoidObstacles;
 import static org.junit.Assert.assertEquals;
 
 public class LongestCommonPrefixAlgorithmTest extends TestCase {
 
+    @Test
     public void testGetLongestCommonPrefix() {
 
         String[] stringArray1 = new String[]{"flower","flow","flight"};
@@ -18,5 +20,8 @@ public class LongestCommonPrefixAlgorithmTest extends TestCase {
         assertEquals("", LongestCommonPrefixAlgorithm.getLongestCommonPrefix(stringArray3));
         assertEquals("floweringint", LongestCommonPrefixAlgorithm.getLongestCommonPrefix(stringArray4));
 
+
+
     }
+
 }
