@@ -22,7 +22,8 @@ public class listConversionAlgorithmTest {
         inputList1.add(7);
         inputList1.add(8);
 
-        List expectedList =List.of(186);
+        List<Integer> expectedList = new ArrayList<>();
+        expectedList.add(186);
         assertThat(listConversion(inputList1)).isEqualTo(expectedList);
     }
 }
